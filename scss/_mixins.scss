@@ -1,0 +1,17 @@
+@mixin control-transition() {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    -moz-transition: all .3s ease;
+}
+
+@mixin box-shadow() {
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    -moz-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@mixin border-radius($x) {
+    -webkit-border-radius: $x;
+    -moz-border-radius: $x;
+    border-radius: $x;
+}
