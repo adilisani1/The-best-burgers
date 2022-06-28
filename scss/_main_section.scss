@@ -1,18 +1,55 @@
-// .hero-section-wrapper{
-//     display:flex;
-//     align-items:center;
-//     justify-content:center;
+.hero-section-wrapper{
+    padding: 15rem 0rem 8rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   
-//     .left-side {
-//         background-color: $color-primary;
-//         height: 100vh;
-//         width: 100%;
-//     }
-//        .right-side {
-//         background-color: $color-secondary;
-//         height: 100vh;
-//         width: 100%;
-//     }
 
+    .try-now {
+        font-size: 4rem;
+        color: $white;
+        font-family: $font-family;
+        font-style: italic;
+        margin-bottom: 1.6rem;
+    }
+
+    .tasty-burger {
+        font-size: 6rem;
+        color: $white;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: $font-family;
+         margin-bottom: 2.2rem;
+         letter-spacing: 2px;
+        span {
+            color: $color-secondary;
+        }
+    }
+
+    p{
+        font-size: 1.4rem;
+        color: $white;
+        font-weight: 300;
+        font-family: $font-family;
+        max-width: 72%;
+        margin-bottom: 2.7rem;
     
-// }
+    }
+
+    .btn{
+        background-color: $color-button;
+        text-decoration: none;
+        @include control-transition;
+        border: none;
+        padding: 0.9rem 2.8rem;
+        font-size: 1.8rem;
+        color: $white;
+    }
+
+    .image-section {
+        img {
+            width: 95%;
+         }
+    }
+
+}

@@ -99,4 +99,52 @@ body {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
+}
+
+.hero-section-wrapper {
+  padding: 15rem 0rem 8rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-section-wrapper .try-now {
+  font-size: 4rem;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  margin-bottom: 1.6rem;
+}
+.hero-section-wrapper .tasty-burger {
+  font-size: 6rem;
+  color: #FFFFFF;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 2.2rem;
+  letter-spacing: 2px;
+}
+.hero-section-wrapper .tasty-burger span {
+  color: #FEB931;
+}
+.hero-section-wrapper p {
+  font-size: 1.4rem;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  max-width: 72%;
+  margin-bottom: 2.7rem;
+}
+.hero-section-wrapper .btn {
+  background-color: #483C36;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  border: none;
+  padding: 0.9rem 2.8rem;
+  font-size: 1.8rem;
+  color: #FFFFFF;
+}
+.hero-section-wrapper .image-section img {
+  width: 95%;
 }/*# sourceMappingURL=style.css.map */
