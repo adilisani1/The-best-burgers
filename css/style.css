@@ -75,6 +75,7 @@ body {
 }
 .header-wrap .nav-item .nav-link:hover::after {
   width: 100%;
+  transform: translateY(-3%);
 }
 .header-wrap .nav-item .nav-link:active {
   color: orange;

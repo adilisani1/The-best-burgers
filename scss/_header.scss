@@ -68,6 +68,7 @@
  
            &:hover::after {
                width: 100%;
+               transform: translateY(-3%);
            }
 
            &:active {
