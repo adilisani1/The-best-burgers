@@ -14,11 +14,10 @@ html {
 }
 
 body {
-  background: linear-gradient(to right, #E04218 0%, #E04218 50%, #FEB931 50%, #FEB931 100%);
-  height: 100vh;
   font-size: 1.6rem;
   line-height: 1.6;
   overflow-x: hidden;
+  color: #483C36;
 }
 
 /*NAVBAR*/
@@ -34,7 +33,26 @@ body {
   -moz-transition: all 0.3s ease;
   padding: 1rem;
   z-index: 999;
-  /*Scroll-Fixed*/
+}
+.header-wrap.active {
+  background-color: #E04218;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  padding: 1rem 1rem;
+  transition-duration: 0.6s;
+  z-index: 99999;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+}
+.header-wrap.active .nav-item .nav-link {
+  color: #FFFFFF;
+  float: left;
+  position: relative;
+  width: 100%;
+  font-size: 1.7rem;
+}
+.header-wrap.active .nav-item .nav-link:active {
+  color: orange;
 }
 .header-wrap .nav-item {
   padding: 0 1.6rem;
@@ -64,26 +82,6 @@ body {
 .header-wrap .menu-navbar {
   text-align: center;
 }
-.header-wrap .header-wrap.sticky {
-  background-color: #ffffff;
-  padding: 10px 10px;
-  transition-duration: 0.6s;
-  z-index: 9999;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
-}
-.header-wrap .header-wrap.sticky .nav-item .nav-link {
-  color: #5c08a7;
-  float: left;
-  position: relative;
-  width: 100%;
-  font-size: 1.7rem;
-}
-.header-wrap .header-wrap.sticky .nav-item .nav-link:active {
-  color: orange;
-}
-.header-wrap .header-wrap.sticky .navbar-brand {
-  color: #5c08a7;
-}
 .header-wrap .contact-btn {
   background-color: #483C36;
   padding: 1.7rem 1.3rem !important;
@@ -102,10 +100,27 @@ body {
 }
 
 .hero-section-wrapper {
+  position: relative;
   padding: 15rem 0rem 8rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(to right, #E04218 0%, #E04218 50%, #FEB931 50%, #FEB931 100%);
+  height: 90vh;
+}
+.hero-section-wrapper .burger-text {
+  position: absolute;
+  right: -14.5%;
+  letter-spacing: 20px;
+  top: 40%;
+  font-size: 12rem;
+  transform: rotate(-90deg);
+  font-family: "Montserrat", sans-serif;
+  color: #E04218;
+  text-transform: uppercase;
+  font-weight: 600;
+  opacity: 0.1;
+  z-index: 1;
 }
 .hero-section-wrapper .try-now {
   font-size: 4rem;
@@ -143,8 +158,104 @@ body {
   border: none;
   padding: 0.9rem 2.8rem;
   font-size: 1.8rem;
+  font-weight: 400;
   color: #FFFFFF;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+.hero-section-wrapper .btn:hover {
+  background-color: #FEB931;
+  transform: translateY(-12%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  color: #000000;
 }
 .hero-section-wrapper .image-section img {
   width: 95%;
+}
+
+.menu-section-container {
+  margin: 6rem 0;
+}
+.menu-section-container .section-title {
+  font-size: 3.5rem;
+  font-family: "Alfa Slab One", cursive;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.menu-section-container .card {
+  background-color: white;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1.5rem 1.5rem;
+  margin: 4rem 0.7rem;
+  text-align: center;
+  justify-content: center;
+}
+.menu-section-container .card:hover {
+  border: 2px solid #E04218;
+  transform: scale(1.1);
+}
+.menu-section-container .card .card-img-top img {
+  width: 100%;
+}
+.menu-section-container .card .card-body .burger-heading {
+  color: #E04218;
+  font-size: 2rem;
+  font-family: "Alfa Slab One", cursive;
+}
+.menu-section-container .card .card-body .burger-dec {
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+}
+.menu-section-container .card .card-footer-text {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-section-container .card .card-footer-text .price-text {
+  color: #FFFFFF;
+  font-size: 2rem;
+  background-color: #E04218;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  padding: 0.3rem 0.8rem;
+  margin-top: 1rem;
+}
+.menu-section-container .card .card-footer-text .btn-class {
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 0.6rem 1.8rem 0.6rem 1.8rem;
+  color: #E04218;
+  border: 1px solid #E04218;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  margin-left: 1rem;
+}
+.menu-section-container .card .card-footer-text .btn-class:hover {
+  background-color: #E04218;
+  color: #FFFFFF;
+}
+.menu-section-container .view-full-menu {
+  background-color: #E04218;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  border: none;
+  padding: 1.5rem 2.8rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+  margin-top: 5rem;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
 }/*# sourceMappingURL=style.css.map */

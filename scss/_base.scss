@@ -11,19 +11,11 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth; 
     overflow-x: hidden;
-
 }
 
 body {
-    background: linear-gradient(
-        to right, 
-        #E04218 0%, 
-        #E04218 50%,
-        #FEB931 50%,
-        #FEB931 100%
-        );
-    height: 100vh;    
     font-size: 1.6rem;
     line-height: 1.6;
     overflow-x: hidden;
+    color: #483C36;
 }
