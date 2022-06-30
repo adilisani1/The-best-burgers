@@ -115,6 +115,11 @@
         transform: scale(1.1);
     }
 
+    &.active {
+        border: 2px solid $color-primary;
+        transform: scale(1.1);
+    }
+
     .card-img-top {
         img {
             width: 100%;
@@ -168,20 +173,73 @@
       }
     }
 
-    .view-full-menu {
-            background-color: $color-primary;
-            text-decoration: none;
-            @include control-transition;
-            border: none;
-            padding: 1.5rem 2.8rem;
-            font-size: 1.8rem;
-            font-weight: 500;
-            font-family: $font-family;
-            color: $white;
-            margin-top: 5rem;
-            @include border-radius(7px);
-            text-transform: uppercase;
-            letter-spacing: 2.2px;
+}
+
+.speacial-deals-section {
+    margin: 4rem 0;
+
+    .speacial-img {
+        animation: MoveUpDown 2.5s linear infinite;
+      
     }
 
+@keyframes MoveUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-45px);
+    }
 }
+
+
+
+    .deal-title{
+        font-size: 6rem;
+        color: $color-primary;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: $font-family;
+        line-height: 6rem;
+        
+        span {
+            color: $color-secondary;
+        }
+
+    }
+
+    .deal-text {
+        font-size: 1.4rem;
+        color: $color-button;
+        font-weight: 400;
+        font-family: $font-family;
+        max-width: 85%;
+        margin-bottom: 2.7rem;
+        line-height: 3rem;
+    }
+
+    .deal-btn {
+          text-decoration: none;
+          font-size: 1.7rem;
+          font-family: $menu-font;
+          padding: 0.6rem 1.8rem 0.6rem 1.8rem;
+          background-color: $color-primary;
+          color: $white;
+         @include border-radius(5px);
+        
+
+        &:hover {
+            background: none;
+                color: $color-primary;
+                border: 1px solid $color-primary;
+                transform: translateY(-4%);
+            }
+    }
+
+   
+}
+
+

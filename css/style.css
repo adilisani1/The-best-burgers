@@ -54,6 +54,13 @@ body {
 .header-wrap.active .nav-item .nav-link:active {
   color: orange;
 }
+.header-wrap.active .contact-btn:hover {
+  background-color: #FEB931;
+  transform: translateY(-12%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
 .header-wrap .nav-item {
   padding: 0 1.6rem;
   margin: 0 0.5rem;
@@ -199,6 +206,10 @@ body {
   border: 2px solid #E04218;
   transform: scale(1.1);
 }
+.menu-section-container .card.active {
+  border: 2px solid #E04218;
+  transform: scale(1.1);
+}
 .menu-section-container .card .card-img-top img {
   width: 100%;
 }
@@ -241,22 +252,55 @@ body {
   background-color: #E04218;
   color: #FFFFFF;
 }
-.menu-section-container .view-full-menu {
-  background-color: #E04218;
-  text-decoration: none;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  border: none;
-  padding: 1.5rem 2.8rem;
-  font-size: 1.8rem;
-  font-weight: 500;
-  font-family: "Montserrat", sans-serif;
-  color: #FFFFFF;
-  margin-top: 5rem;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
+
+.speacial-deals-section {
+  margin: 4rem 0;
+}
+.speacial-deals-section .speacial-img {
+  animation: MoveUpDown 2.5s linear infinite;
+}
+@keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-45px);
+  }
+}
+.speacial-deals-section .deal-title {
+  font-size: 6rem;
+  color: #E04218;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 2.2px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 6rem;
+}
+.speacial-deals-section .deal-title span {
+  color: #FEB931;
+}
+.speacial-deals-section .deal-text {
+  font-size: 1.4rem;
+  color: #483C36;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  max-width: 85%;
+  margin-bottom: 2.7rem;
+  line-height: 3rem;
+}
+.speacial-deals-section .deal-btn {
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-family: "Alfa Slab One", cursive;
+  padding: 0.6rem 1.8rem 0.6rem 1.8rem;
+  background-color: #E04218;
+  color: #FFFFFF;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.speacial-deals-section .deal-btn:hover {
+  background: none;
+  color: #E04218;
+  border: 1px solid #E04218;
+  transform: translateY(-4%);
 }/*# sourceMappingURL=style.css.map */
