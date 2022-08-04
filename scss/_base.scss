@@ -6,16 +6,11 @@
     padding: 0;
 }
 
-html {
+html, body {
     box-sizing: border-box;
     font-size: 62.5%;
     scroll-behavior: smooth; 
     overflow-x: hidden;
+    line-height: 1.6;
 }
 
-body {
-    font-size: 1.6rem;
-    line-height: 1.6;
-    overflow-x: hidden;
-    color: #483C36;
-}
